@@ -29,10 +29,9 @@ const MealPlanOutput = () => {
       selectedPlan: data.selectedPlan,
       weightMeasurement: data.weightMeasurement,
       dietaryPreferences: data.dietaryPreferences,
-      fruitAndVeg: data.fruitAndVeg,
     };
 
-    fetch("http://localhost:3001/createMealPlan", {
+    fetch("https://nutriplanapi-production.up.railway.app/createMealPlan", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -43,7 +42,8 @@ const MealPlanOutput = () => {
       .then((response) => {
         setBulletPoints(response.message.split("\n"));
         setIsLoading(false);
-      });
+      })
+      .catch((error) => console.error(error));
   }, [data]);
 
   const handleEmailSubmit = async (e: any) => {
@@ -53,7 +53,7 @@ const MealPlanOutput = () => {
       email: emailAddress,
     };
 
-    fetch("http://localhost:3001/emailSubmit", {
+    fetch("https://nutriplanapi-production.up.railway.app/emailSubmit", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -65,7 +65,8 @@ const MealPlanOutput = () => {
         console.log(data);
         setSuccessMessage(data);
         setEmailAddress("");
-      });
+      })
+      .catch((error) => console.error(error));
   };
 
   return (

@@ -21,8 +21,6 @@ const MealPlan = ({ setCurrentPage, currentPage }: any) => {
   const [selectedMeal, setSelctedMeal] = useState("");
   const [preferredCusines, setPreferedCusines] = useState("");
 
-  //For Fruit and Veg
-
   const handleClick = () => {
     setCurrentPage(currentPage + 1);
     dispatch(setSelectedMeal(selectedMeal));
