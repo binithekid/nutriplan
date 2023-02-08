@@ -59,9 +59,9 @@ const Weight = ({ setCurrentPage, currentPage }: any) => {
           <div className='topHalf'>
             <h1>Your Weight, Your Goals!</h1>
             <p className='paraText'>
-              In order to help you achieve your fitness goals, we ask for your
-              current weight and your height. If you don't know your exact
-              weight or height just put a reasonable estimate!
+              In order to help you achieve your goals, we ask for your current
+              weight and your height. If you don't know your exact weight or
+              height just put a reasonable estimate!
             </p>
             <div className='weightInputContainer'>
               <div className='weightContainer'>
@@ -107,7 +107,7 @@ const Weight = ({ setCurrentPage, currentPage }: any) => {
             <button
               style={
                 !currentWeight || !height
-                  ? { opacity: "40%" }
+                  ? { opacity: "50%" }
                   : { opacity: "100%" }
               }
               disabled={!currentWeight || !height}

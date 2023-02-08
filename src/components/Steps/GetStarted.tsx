@@ -4,8 +4,9 @@ import eggs from "../../resources/Eggs.jpeg";
 import pasta from "../../resources/pasta.jpeg";
 import soup from "../../resources/soup.jpeg";
 import salad from "../../resources/salad.jpeg";
+import logo from "../../resources/Nutriplanlogo.png";
 import Footer from "../Footer";
-import { FaWeight, FaCog, FaSeedling, FaLeaf } from "react-icons/fa";
+import { FaWeight, FaCog, FaSeedling } from "react-icons/fa";
 
 const GetStarted = ({ currentPage, setCurrentPage }: any) => {
   const handleClick = () => {
@@ -21,12 +22,10 @@ const GetStarted = ({ currentPage, setCurrentPage }: any) => {
         transition={{ duration: 0.5 }}
         className='GetStarted'>
         <div className='GetStartedHero'>
-          <p className='getStartedText'>Welcome to</p>
-          <h1 className='HeroTitle'>
-            <FaLeaf className='HeaderLogo' /> NUTRIPLAN
-          </h1>
+          <img src={logo} alt='logo' className='HomepageLogo' />
           <p className='getStartedText'>
-            Discover delicious and nutritious meal plans tailored to your needs!
+            Discover delicious and nutritious meal plans tailored to your needs,
+            powered by OpenAi!
           </p>
           <button
             className='Button'
@@ -41,11 +40,10 @@ const GetStarted = ({ currentPage, setCurrentPage }: any) => {
             <p className='GetStartedPara'>
               Unleash your inner chef and reach your health goals! Say goodbye
               to boring salads and bland chicken breasts. With just a few taps,
-              our app creates a custom meal plan based on your personal details,
-              such as height, weight, age, and activity level. Whether you're
-              looking to lose weight, build muscle, or just want to eat
-              healthier, our app has got you covered. And the best part? You can
-              email your delicious plan to yourself and enjoy it anytime,
+              you can create a custom meal plan based on your personal details.
+              Whether you're looking to lose weight, build muscle, or just want
+              to eat healthier, we've got you covered. And the best part? You
+              can email your delicious plan to yourself and enjoy it anytime,
               anywhere. So, get ready to tantalize your taste buds and achieve
               your health goals like a boss!
             </p>

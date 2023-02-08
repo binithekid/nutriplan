@@ -89,7 +89,7 @@ const MealPlanOutput = () => {
           transition={{ duration: 0.5 }}
           className='MealPlanContainer'>
           <div className='LeftSide'>
-            <h1>YOUR MEAL PLAN</h1>
+            <h1>Your meal plan!</h1>
             {bulletPoints.map((bulletPoint, index) => (
               <p className='bulletPoints' key={index}>
                 {bulletPoint}

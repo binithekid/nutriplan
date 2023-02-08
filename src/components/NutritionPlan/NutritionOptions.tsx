@@ -25,7 +25,7 @@ const NutritionOptions = ({ setCurrentPage, currentPage }: any) => {
         className='pageDesign'>
         <div className='leftSide'>
           <div className='topHalf'>
-            <h1 style={{ marginTop: "40px" }}>OPTIONS FOR YOU</h1>
+            <h1 style={{ marginTop: "40px" }}>Options for you</h1>
             <p className='paraText'>
               We offer meal plan options to suit your individual needs and
               goals. The Single Meal Plan is for when you aren't sure what meal
@@ -64,7 +64,7 @@ const NutritionOptions = ({ setCurrentPage, currentPage }: any) => {
             </button>
             <button
               className='Button'
-              style={{ opacity: !selectedMealPlan ? "70%" : "1" }}
+              style={{ opacity: !selectedMealPlan ? "50%" : "100%" }}
               disabled={!selectedMealPlan}
               onClick={handleSubmit}>
               Next

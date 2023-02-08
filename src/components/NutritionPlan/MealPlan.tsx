@@ -49,7 +49,7 @@ const MealPlan = ({ setCurrentPage, currentPage }: any) => {
           className='pageDesign'>
           <div className='leftSide'>
             <div className='topHalf'>
-              <h1>YOUR PERSONAL MEAL PLAN OPTIONS</h1>
+              <h1>Your personal meal plan options</h1>
               {data.selectedPlan === "Single" && (
                 <SingleOption
                   selectedMeal={selectedMeal}
@@ -82,8 +82,8 @@ const MealPlan = ({ setCurrentPage, currentPage }: any) => {
                 style={{
                   opacity:
                     data.selectedPlan === "Single" && !selectedMeal
-                      ? "40%"
-                      : "1",
+                      ? "50%"
+                      : "100%",
                 }}
                 onClick={handleClick}
                 className='Button'>

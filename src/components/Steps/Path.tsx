@@ -26,11 +26,10 @@ const Path = ({ setCurrentPage, currentPage }: any) => {
           <div className='topHalf'>
             <h1>Let's begin!</h1>
             <p className='paraText'>
-              We are here to help you achieve your health and fitness goals.
-              Before we get started, we'd like to know what you hope to
-              accomplish with your workouts. Are you looking to lose weight, or
-              gain muscle? Please let us know so we can create a customized plan
-              that's right for you.
+              We are here to help you achieve your healthy eating goals. Before
+              we get started, we'd like to know what you hope to accomplish. Are
+              you looking to lose weight, or gain muscle? Let us know so we can
+              create a customized meal plan that's right for you.
             </p>
 
             <div className='select-dropdown'>
@@ -51,7 +50,7 @@ const Path = ({ setCurrentPage, currentPage }: any) => {
               Back
             </button>
             <button
-              style={!selectPath ? { opacity: "40%" } : { opacity: "100%" }}
+              style={!selectPath ? { opacity: "50%" } : { opacity: "100%" }}
               disabled={!selectPath}
               className='Button'
               onClick={handleClick}>

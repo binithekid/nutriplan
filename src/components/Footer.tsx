@@ -1,11 +1,15 @@
-import { FaTwitter, FaInstagram, FaLeaf } from "react-icons/fa";
+import { FaTwitter, FaInstagram } from "react-icons/fa";
+import logo from "../resources/Nutriplanlogo.png";
 
 const Footer = () => {
+  const refreshPage = () => {
+    window.location.reload();
+  };
   return (
     <div className='FooterDiv'>
-      <h1 className='FooterLogo'>
-        <FaLeaf className='footerLeafLogo' /> NUTRIPLAN
-      </h1>
+      <div className='FooterLogoContainer' onClick={refreshPage}>
+        <img src={logo} alt='logo' className='footerLogo' />
+      </div>
       <p className='FooterText'>
         Discover delicious and nutritious meal plans tailored to your needs!
       </p>
@@ -13,7 +17,9 @@ const Footer = () => {
         <FaTwitter className='Icon' />
         <FaInstagram className='Icon' />
       </div>
-      <p className='footercopyright'>Copyright © 2022 Nutriplan.ai</p>
+      <p className='FooterText' style={{ color: "gray", fontSize: "12px" }}>
+        Copyright © 2022 Nutriplan
+      </p>
     </div>
   );
 };

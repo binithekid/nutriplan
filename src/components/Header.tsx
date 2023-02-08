@@ -1,4 +1,5 @@
-import { FaTwitter, FaInstagram, FaLeaf } from "react-icons/fa";
+import { FaTwitter, FaInstagram } from "react-icons/fa";
+import logo from "../resources/Nutriplanlogo.png";
 
 const Header = () => {
   const refreshPage = () => {
@@ -8,9 +9,7 @@ const Header = () => {
   return (
     <nav className='navbar'>
       <div className='navbarLogo' onClick={refreshPage}>
-        <h1>
-          <FaLeaf className='leafLogo' /> NUTRIPLAN
-        </h1>
+        <img src={logo} alt='logo' className='headerLogo' />
       </div>
       <div className='navbarItems'>
         <li className='navabarItem'>

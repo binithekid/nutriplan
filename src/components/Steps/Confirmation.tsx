@@ -19,12 +19,12 @@ const Confirmation = ({ setCurrentPage, currentPage }: any) => {
         className='pageDesign'>
         <div className='leftSide'>
           <div className='topHalf'>
-            <h1>SO FAR SO GOOD?</h1>
+            <h1>So far so good?</h1>
             <p className='paraText'>
               Please take a moment to double-check that the personal data you
               have entered is correct. It is important that this information is
-              accurate in order for us to tailor your fitness and diet plan to
-              your specific needs.
+              accurate in order for us to tailor your diet plan to your specific
+              needs.
             </p>
             <li className='PlanListItem'>
               <span style={{ fontWeight: "600" }}>Age:</span> {data.age}

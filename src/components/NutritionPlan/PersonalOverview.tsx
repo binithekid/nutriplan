@@ -98,20 +98,16 @@ const PersonalOverview = ({ currentPage, setCurrentPage }: any) => {
         className='pageDesign'>
         <div className='leftSide'>
           <div className='topHalf'>
-            <h1>YOUR Recommended REQUIREMENTS</h1>
-
+            <h1>Your recommendations</h1>{" "}
             {data.pathChoice === "Build Muscle" ? (
               <>
                 <p className='paraText'>
                   In order to build muscle, you need to be in a{" "}
                   <b>calorie surplus</b> meaning you need to consume more
-                  calories than you burn. You should focus on consuming a
-                  balanced diet that is high in protein and calories. Numerous
-                  studies have tried to determine the optimal amount of protein
-                  for muscle gain, with{" "}
-                  <b>0.8 - 1 grams of protein per pound </b>of body weight
-                  seeming to be the most reasonable estimate. For you that would
-                  be roughly{" "}
+                  calories than you burn. Studies have determined that the
+                  optimal amount of protein for muscle gain is
+                  <b>0.8 - 1 grams of protein per pound </b>of body weight. For
+                  you that would be roughly{" "}
                   <b>
                     {proteinIntake(data.currentWeight).toFixed(0)} grams of
                     protein{" "}
@@ -122,13 +118,10 @@ const PersonalOverview = ({ currentPage, setCurrentPage }: any) => {
                   bodyweight to gain muscle mass. Try to consume around{" "}
                   <b>{calculateCalories(data.currentWeight)} calories</b> each
                   day to ensure you are getting enough energy to fuel your
-                  workouts and build muscle. Make sure to get a variety of
-                  nutrient-dense foods such as lean meats, eggs, dairy, fruits,
-                  vegetables, whole grains, and healthy fats. Please keep in
-                  mind that these nutritional recommendations are based on the
-                  assumption that you are engaging in a regular weightlifting or
-                  intense resistance training program, at least 4-5 times per
-                  week.
+                  workouts. Please keep in mind that these nutritional
+                  recommendations are based on the assumption that you are
+                  engaging in a regular weightlifting or intense resistance
+                  training program, at least 4-5 times per week.
                 </p>
                 <li className='IntakeListItem'>
                   <b>Recommended Protein Intake:</b>{" "}
@@ -145,15 +138,15 @@ const PersonalOverview = ({ currentPage, setCurrentPage }: any) => {
                   Losing weight requires creating a <b>calorie deficit</b>. To
                   achieve this, you must consume fewer calories than your body
                   burns. The amount of calories you burn in a day is known as
-                  your total daily energy expenditure (TDEE). Based on the
-                  information provided, your TDEE has been calculated to be{" "}
-                  <b>{TDEE}</b>. This calculation is based on factors such as
-                  your age, sex, weight, height, and activity level. To lose
-                  weight, you must consume fewer calories than your TDEE. A safe
-                  and sustainable rate of weight loss is usually considered to
-                  be around <b>0.5-1 kg (1-2 pounds) per week.</b> This would
-                  require a calorie deficit of around<b> 500-1000 calories</b>{" "}
-                  per day. It is crucial to keep in mind that these are general
+                  your total daily energy expenditure (TDEE). Your TDEE has been
+                  calculated to be <b>{TDEE}</b>. This calculation is based on
+                  factors such as your age, sex, weight, height, and activity
+                  level. To lose weight, you must consume fewer calories than
+                  your TDEE. A safe and sustainable rate of weight loss is
+                  usually considered to be around{" "}
+                  <b>0.5-1 kg (1-2 pounds) per week.</b> This would require a
+                  calorie deficit of around<b> 500-1000 calories</b> per day. It
+                  is crucial to keep in mind that these are general
                   recommendations and what may be effective for one individual,
                   may not be for another. In order to achieve your weight loss
                   goals, it is vital that you find a sustainable approach that
