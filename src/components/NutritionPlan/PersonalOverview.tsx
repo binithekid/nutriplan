@@ -118,10 +118,10 @@ const PersonalOverview = ({ currentPage, setCurrentPage }: any) => {
                   bodyweight to gain muscle mass. Try to consume around{" "}
                   <b>{calculateCalories(data.currentWeight)} calories</b> each
                   day to ensure you are getting enough energy to fuel your
-                  workouts. Please keep in mind that these nutritional
+                  {/* workouts. Please keep in mind that these nutritional
                   recommendations are based on the assumption that you are
                   engaging in a regular weightlifting or intense resistance
-                  training program, at least 4-5 times per week.
+                  training program, at least 4-5 times per week. */}
                 </p>
                 <li className='IntakeListItem'>
                   <b>Recommended Protein Intake:</b>{" "}

@@ -318,6 +318,7 @@ h1 {
   overflow: hidden;
   width: 100% !important;
   overflow-x: hidden !important;
+  background: radial-gradient(at left top, rgb(241, 245, 249), white, white);
 }
 
 @media (max-width: 450px) {
@@ -926,7 +927,22 @@ h1 {
     flex-direction: column;
     gap: 20px;
   }
+  .IntakeListItem {
+    font-size: 15px;
+  }
   .paraText {
     font-size: 14px;
+  }
+}
+
+@media (max-width: 375px) {
+  .paraText {
+    font-size: 12px;
+  }
+  .IntakeListItem {
+    font-size: 13px;
+  }
+  h1 {
+    font-size: 20px;
   }
 }
