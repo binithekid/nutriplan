@@ -25,7 +25,7 @@ const GetStarted = ({ currentPage, setCurrentPage }: any) => {
           <img src={logo} alt='logo' className='HomepageLogo' />
           <p className='getStartedText'>
             Discover delicious and nutritious meal plans tailored to your needs,
-            powered by OpenAi!
+            powered by OpenAi
           </p>
           <button
             className='Button'
