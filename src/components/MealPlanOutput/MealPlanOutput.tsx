@@ -53,6 +53,10 @@ const MealPlanOutput = () => {
       email: emailAddress,
     };
 
+    setSuccessMessage({
+      message: "Loading",
+    });
+
     fetch("https://nutriplanapi-production.up.railway.app/emailSubmit", {
       method: "POST",
       headers: {
@@ -111,12 +115,22 @@ const MealPlanOutput = () => {
                   onChange={(event) => setEmailAddress(event.target.value)}
                   placeholder='Enter your email address'
                 />
-                <button className='submitButton' disabled={!emailAddress}>
+                <button
+                  className='submitButton'
+                  disabled={
+                    !emailAddress || successMessage.message === "Loading"
+                  }>
                   Submit
                 </button>
               </form>
-              {successMessage?.message === "Success" ? (
-                <p className='smallTextSuccess'>Email sent succesfully!</p>
+              {successMessage?.message === "Loading" ? (
+                <p className='smallText'>
+                  Sending your meal plan please wait..
+                </p>
+              ) : successMessage?.message === "Success" ? (
+                <p className='smallTextSuccess'>
+                  Your meal plan has sent succesfully!
+                </p>
               ) : successMessage?.message ? (
                 <p className='smallTextError'>
                   There has been an error sending your email, please try another
