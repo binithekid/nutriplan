@@ -21,10 +21,7 @@ const Header = () => {
             <FaTwitter className='Icon' />
           </li>
         </Link>
-        <a
-          href='mailto:nutriplanai@outlook.com?subject=Feedback%20on%20NutriPlan&body=Hi%20there%2C%20I%20wanted%20to%20provide%20some%20feedback%20on%20NutriPlan...'
-          target='_blank'
-          rel='noopener noreferrer'>
+        <a href='mailto:nutriplanai@outlook.com?subject=Feedback%20on%20NutriPlan&body=Hi%20there%2C%20I%20wanted%20to%20provide%20some%20feedback%20on%20NutriPlan...'>
           <li className='navabarItem'>
             <FaEnvelope className='Icon' />
           </li>
