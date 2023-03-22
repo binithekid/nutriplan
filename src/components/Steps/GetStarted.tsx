@@ -4,7 +4,7 @@ import eggs from "../../resources/Eggs.jpeg";
 import pasta from "../../resources/pasta.jpeg";
 import soup from "../../resources/soup.jpeg";
 import salad from "../../resources/salad.jpeg";
-import logo from "../../resources/Nutriplanlogo.png";
+import logo from "../../resources/Nutraiplanlogo.png";
 import Footer from "../Footer";
 import { FaWeight, FaCog, FaSeedling } from "react-icons/fa";
 
