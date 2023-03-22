@@ -105,8 +105,8 @@ const PersonalOverview = ({ currentPage, setCurrentPage }: any) => {
                   In order to build muscle, you need to be in a{" "}
                   <b>calorie surplus</b> meaning you need to consume more
                   calories than you burn. Studies have determined that the
-                  optimal amount of protein for muscle gain is
-                  <b>0.8 - 1 grams of protein per pound </b>of body weight. For
+                  optimal amount of protein for muscle gain is{" "}
+                  <b>0.8 - 1 grams of protein per pound </b> of body weight. For
                   you that would be roughly{" "}
                   <b>
                     {proteinIntake(data.currentWeight).toFixed(0)} grams of
@@ -117,7 +117,7 @@ const PersonalOverview = ({ currentPage, setCurrentPage }: any) => {
                   around <b>20 calories per pound</b> (or 44 kcal / kg) of
                   bodyweight to gain muscle mass. Try to consume around{" "}
                   <b>{calculateCalories(data.currentWeight)} calories</b> each
-                  day to ensure you are getting enough energy to fuel your
+                  day to ensure you are getting enough energy.
                   {/* workouts. Please keep in mind that these nutritional
                   recommendations are based on the assumption that you are
                   engaging in a regular weightlifting or intense resistance
