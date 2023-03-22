@@ -33,7 +33,7 @@ const Footer = () => {
         </a>
       </div>
       <p className='FooterText' style={{ color: "gray", fontSize: "12px" }}>
-        Copyright © 2022 Nutriplan
+        Copyright © 2022 Nutraiplan
       </p>
     </div>
   );
