@@ -1,5 +1,5 @@
 import { FaTwitter, FaEnvelope } from "react-icons/fa";
-import logo from "../resources/Nutraiplanlogonoicon.png";
+import logo from "../resources/logonoicon.png";
 import { Link } from "react-router-dom";
 
 const Header = () => {
