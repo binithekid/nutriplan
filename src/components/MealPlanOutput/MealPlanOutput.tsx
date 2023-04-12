@@ -31,7 +31,7 @@ const MealPlanOutput = () => {
       dietaryPreferences: data.dietaryPreferences,
     };
 
-    fetch("http://localhost:3001/createMealPlan", {
+    fetch("https://nutriplanapi-production.up.railway.app/createMealPlan", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
